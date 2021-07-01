@@ -1,4 +1,3 @@
-import tkinter 
 
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
@@ -11,9 +10,6 @@ import random
 import json 
 import pickle
 
-window = tkinter.Tk()
-window.title("Chat Bot")
-window.geometry("300x450")
 
 with open("intents.json") as file:
 	data  = json.load(file)
@@ -118,4 +114,3 @@ def chat():
 
 chat()
 
-window.mainloop()
